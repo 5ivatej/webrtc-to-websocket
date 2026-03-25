@@ -1,0 +1,29 @@
+{
+    "name": "wsrtc-server",
+    "version": "1.0.0",
+    "description": "WebSocket signaling server for wsrtc — WebRTC made easy for Flutter",
+    "main": "dist/index.js",
+    "scripts": {
+      "build": "tsc",
+      "start": "node dist/index.js",
+      "dev": "ts-node src/index.ts",
+      "dev:watch": "ts-node-dev --respawn src/index.ts"
+    },
+    "dependencies": {
+      "uuid": "^9.0.1",
+      "ws": "^8.17.1"
+    },
+    "devDependencies": {
+      "@types/node": "^20.14.9",
+      "@types/uuid": "^9.0.8",
+      "@types/ws": "^8.5.10",
+      "ts-node": "^10.9.2",
+      "ts-node-dev": "^2.0.0",
+      "typescript": "^5.5.3"
+    },
+    "engines": {
+      "node": ">=18.0.0"
+    },
+    "keywords": ["webrtc", "websocket", "signaling", "flutter", "wsrtc"],
+    "license": "MIT"
+  }
